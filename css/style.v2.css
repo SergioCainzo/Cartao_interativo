@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
-
+/* CSS Com position */
 
 body {
     background-color: hsl(0, 0%, 100%);
@@ -8,16 +8,17 @@ body {
     font-size: 18px;
 }
 
+/* Container principal */
 .container {
     background-image: url(/interactive-card-details-form-main/images/bg-main-desktop.png);
     background-repeat: no-repeat;
     background-size: contain;
     height: 100vh;
-    width: auto;
     display: grid;
     grid-template-columns: 30% 70%;   
 }
 
+/* Parte da frente do cartão */
 .container_card_front {
     background-image: url(/interactive-card-details-form-main/images/bg-card-front.png);
     background-repeat: no-repeat;
@@ -25,9 +26,8 @@ body {
     height: 200px;
     width: 400px;
     position: absolute;
-    top: 33%;
-    left: 22%;
-    margin-right: -20%;
+    top: 38%;
+    left: 25%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
 }
@@ -59,7 +59,7 @@ body {
     left: 70%;
 }
 
-
+/* Parte de trás do cartão */
 .container_card_back {
     background-image: url(/interactive-card-details-form-main/images/bg-card-back.png);
     background-repeat: no-repeat;
@@ -67,9 +67,8 @@ body {
     height: 200px;
     width: 400px;
     position: absolute;
-    top: 62%;
-    left: 27%;
-    margin-right: -20%;
+    top: 63%;
+    left: 28%;
     transform: translate(-50%, -50%);
 }
 
@@ -80,46 +79,38 @@ body {
     
 }
 
+/* Inicio do formulário */
 .container_formulario{
     display: flex;
     flex-flow: column wrap;
-    margin-top: 250px;
-    margin-left: 200px;
-    width: 50%;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
     color: hsl(278, 68%, 11%);
 }
 
-input.name{
-    padding: 8px;
-    width: 60%;
-    margin-top: 5px;
-    margin-bottom: 20px;
+.name, .number, .mm, .yy, .sec{
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 5px;
 }
 
-input.number{
-    padding: 8px;
-    width: 60%;
-    margin-top: 5px;
-    margin-bottom: 20px;
+input::placeholder{
+    color: hsl(270, 3%, 87%);
 }
 
-input.mm{
-    padding: 8px;
-    width: 5%;;
-}
-input.yy{
-    padding: 8px;
-    width: 5%;
+input.mm, input.yy{
+    width: 20px;
 }
 
-.sec{
-    padding: 8px;
-    width: 15%;
+input.sec{
+    width: 60px;
 }
 
-
-
-
+/* Inicio do botão */
 button {
     padding: 1em;
     background: hsl(278, 68%, 11%);
@@ -127,4 +118,6 @@ button {
     font-family: 'Space Grotesk', sans-serif;
     border-radius: 10px;
     margin-top: 20px;
+    cursor: pointer;
+    
 }

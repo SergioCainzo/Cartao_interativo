@@ -1,40 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 
-
+/* Corpo/Boddy */
 body {
     background-color: hsl(0, 0%, 100%);
     font-size: 18px;
+    text-transform: uppercase;
     font-family: 'Space Grotesk', sans-serif;
+    
 }
 
 .container {
-    background-image: url(/interactive-card-details-form-main/images/bg-main-desktop.png);
+    background-image: url(/Cartao_interativo-main/images/bg-main-desktop.png);
     background-repeat: no-repeat;
-    background-size: contain;
     height: 100vh;
     display: grid;
-    grid-template-columns: 35% 65%;   
+    grid-template-columns: 50% 50%;
 }
 
-.container_card_front {
-    background-image: url(/interactive-card-details-form-main/images/bg-card-front.png);
+.container_card_front{
+    background-image: url(/Cartao_interativo-main/images/bg-card-front.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 200px;
-    color: white;
-    margin: 200px 0 0 200px;
+    width: 300px;
+    height: 150px;
 }
-
-.container_card_back {
-    background-image: url(/interactive-card-details-form-main/images/bg-card-back.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 200px;
-    margin: 50px 0 0 200px;    
-}
-
-
-.container_formulario{
-    text-align: center;
-}
-
