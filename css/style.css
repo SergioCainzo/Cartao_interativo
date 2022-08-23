@@ -1,25 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+/* CSS Com position */
 
-/* Corpo/Boddy */
 body {
     background-color: hsl(0, 0%, 100%);
-    font-size: 18px;
-    text-transform: uppercase;
     font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+/* Container principal */
+.container {
+    background-image: url(/interactive-card-details-form-main/images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 30% 70%;   
+}
+
+/* Parte da frente do cartão */
+.container_card_front {
+    background-image: url(/interactive-card-details-form-main/images/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 38%;
+    left: 25%;
+    transform: translate(-50%, -50%);
     
 }
 
-.container {
-    background-image: url(/Cartao_interativo-main/images/bg-main-desktop.png);
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
+.imagem_card {
+    margin: 30px;
 }
 
-.container_card_front{
-    background-image: url(/Cartao_interativo-main/images/bg-card-front.png);
+.container_card_front p{
+    color: white;    
+}
+
+.number_card {
+    position: absolute;
+    top: 60%;
+    left: 30px;
+    font-size: 27px;
+}
+
+.name_card{
+    position: absolute;
+    top: 80%;
+    left: 30px;
+}
+
+.valid_card{
+    position: absolute;
+    top: 80%;
+    left: 70%;
+}
+
+/* Parte de trás do cartão */
+.container_card_back {
+    background-image: url(/interactive-card-details-form-main/images/bg-card-back.png);
     background-repeat: no-repeat;
-    width: 300px;
-    height: 150px;
+    background-size: contain;
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 63%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+}
+
+.container_card_back p {
+    text-align: end;
+    margin: 90px 80px;
+    color: white;
+    
+}
+
+/* Inicio do formulário */
+.container_formulario{
+    display: flex;
+    flex-flow: column wrap;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: hsl(278, 68%, 11%);
+}
+
+.name, .number, .mm, .yy, .sec{
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 5px;
+}
+
+input::placeholder{
+    color: hsl(270, 3%, 87%);
+}
+
+.item_cvc{
+    margin-left: 50px;
+}
+
+input.mm, input.yy{
+    width: 20px;
+}
+
+.sec{
+    margin-left: 143px;;
+}
+
+input.sec{
+    width: 60px;
+}
+
+/* Inicio do botão */
+button {
+    padding: 1em;
+    background: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Space Grotesk', sans-serif;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    
 }

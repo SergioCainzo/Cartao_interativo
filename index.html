@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="/Cartao_interativo-main/css/style.v2.css">
+  <link rel="stylesheet" href="/Cartao_interativo-main/css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive card details form</title>
@@ -41,15 +41,14 @@
       <label for="number">Card Number</label>
       <input type="text" id="number" class="number" placeholder="e.g. 1234 5678 9123 0000">
       
-      <label for="mm">Exp. Date (MM/YY)</label>
+      
+      <div>
+        <label for="mm">Exp. Date (MM/YY)</label>
+        <label for="sec" class="item_cvc">CVC</label>
+      </div>
       <div>
         <input type="text" id="mm" class="mm" placeholder="MM">
         <input type="text" id="yy" class="yy" placeholder="YY">
-      </div>
-      
-      
-      <label for="sec" class="">CVC</label>
-      <div>
         <input type="text" id="sec" class="sec" placeholder="e.g. 123">
       </div>
       
