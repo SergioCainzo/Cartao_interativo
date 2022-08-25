@@ -22,13 +22,13 @@
     <section>
       <div class="container_card_front" >
         <img src="/interactive-card-details-form-main/images/favicon-32x32.png" alt="Foto do Cartão" class="imagem_card">
-        <p class="number_card">0000 0000 0000 0000</p>
-        <p class="name_card">Jane Appleseed</p>
-        <p class="valid_card">00/00</p>
+        <p id="card_number" class="card_number">0000 0000 0000 0000</p>
+        <p id="card_name" class="card_name" onchange="teste()">Jane Appleseed</p>
+        <p id="card_valid" class="card_valid">00/00</p>
       </div>
   
       <div class="container_card_back">
-        <p class="seguro">000</p>
+        <p class="seguro" class="cod">000</p>
       </div>
 
     </section>
@@ -36,10 +36,10 @@
     <form class="container_formulario">
       
       <label for="name" class="">Cardholder Name</label>
-      <input type="text" id="name" class="name" placeholder="e.g. Jane Appleseed">
+      <input type="text" id="name" class="name" required placeholder="e.g. Jane Appleseed" onchange="letrasMaiusculas()">
 
       <label for="number">Card Number</label>
-      <input type="text" id="number" class="number" placeholder="e.g. 1234 5678 9123 0000">
+      <input type="text" id="number" class="number" required placeholder="e.g. 1234 5678 9123 0000">
       
       
       <div>
@@ -47,9 +47,9 @@
         <label for="sec" class="item_cvc">CVC</label>
       </div>
       <div>
-        <input type="text" id="mm" class="mm" placeholder="MM">
-        <input type="text" id="yy" class="yy" placeholder="YY">
-        <input type="text" id="sec" class="sec" placeholder="e.g. 123">
+        <input type="text" id="mm" class="mm" required placeholder="MM">
+        <input type="text" id="yy" class="yy" required placeholder="YY">
+        <input type="text" id="sec" class="sec" required placeholder="e.g. 123">
       </div>
       
 
