@@ -40,20 +40,20 @@ body {
     color: white;    
 }
 
-.number_card {
+.card_number {
     position: absolute;
     top: 60%;
     left: 30px;
     font-size: 27px;
 }
 
-.name_card{
+.card_name{
     position: absolute;
     top: 80%;
     left: 30px;
 }
 
-.valid_card{
+.card_valid{
     position: absolute;
     top: 80%;
     left: 70%;
