@@ -17,6 +17,10 @@ let ano = document.querySelector('.yy');
 let cardValid = document.querySelector('.card_valid');
 
 
+// Seletor Tag Form
+let resposta = document.querySelector('.container_formulario');
+
+
 // Const do click => botao
 const botao = document.querySelector('.button');
 
@@ -25,7 +29,7 @@ const botao = document.querySelector('.button');
 botao.addEventListener('click', () => {
     // Funções do cartão;
     mudarCodigo();
-    
+    msg();
     // Letras Maiúsculas
     letrasMaiusculas();
 })
@@ -38,7 +42,11 @@ function mudarCodigo(){
     cardValid.textContent = mes.value + '/' + ano.value;
 }
 
-
+// Função de Letra Maiuscula
 function letrasMaiusculas(){
     nome.value = nome.value.toUpperCase();
+}
+
+function msg (){
+    resposta.innerHTML = "Thank you!";
 }
