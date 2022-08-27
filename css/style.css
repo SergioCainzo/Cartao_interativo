@@ -10,7 +10,7 @@ body {
 
 /* Container principal */
 .container {
-    background-image: url(/interactive-card-details-form-main/images/bg-main-desktop.png);
+    background-image: url("../images/bg-main-desktop.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 100vh;
@@ -20,7 +20,7 @@ body {
 
 /* Parte da frente do cartão */
 .container_card_front {
-    background-image: url(/interactive-card-details-form-main/images/bg-card-front.png);
+    background-image: url('../images/bg-card-front.png');
     background-repeat: no-repeat;
     background-size: contain;
     height: 200px;
@@ -61,7 +61,7 @@ body {
 
 /* Parte de trás do cartão */
 .container_card_back {
-    background-image: url(/interactive-card-details-form-main/images/bg-card-back.png);
+    background-image: url('../images/bg-card-back.png');
     background-repeat: no-repeat;
     background-size: contain;
     height: 200px;
@@ -129,10 +129,13 @@ button {
     cursor: pointer;
 }
 
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
 @media screen and (max-width: 480px) {
     /* container dos cartões */
     .container{
-        background-image: url(/Card_interactive-main/images/bg-main-mobile.png);
+        background-image: url("../images/bg-main-mobile.png");
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -146,21 +149,21 @@ button {
         z-index: 1;
     }
 
-    .number_card {
+    .card_number {
         position: absolute;
         top: 50%;
         left: 30px;
-        font-size: 20px;
+        font-size: 18px;
     }
     
-    .name_card{
+    .card_name{
         position: absolute;
         top: 70%;
         left: 30px;
         font-size: 12px;
     }
     
-    .valid_card{
+    .card_valid{
         position: absolute;
         top: 70%;
         left: 70%;

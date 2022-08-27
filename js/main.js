@@ -16,7 +16,6 @@ let mes = document.querySelector('.mm');
 let ano = document.querySelector('.yy');
 let cardValid = document.querySelector('.card_valid');
 
-
 // Seletor Tag Form
 let resposta = document.querySelector('.container_formulario');
 
@@ -26,19 +25,23 @@ const botao = document.querySelector('.button');
 
 
 
+// Funções de evento
+
+// Ação do evento "clicar"
 botao.addEventListener('click', () => {
     // Funções do cartão;
-    mudarCodigo();
+    mudarCodigo()
     msg();
     // Letras Maiúsculas
     letrasMaiusculas();
 })
 
-
+//  Funções
+// Função para evento de clicar
 function mudarCodigo(){
     cardName.textContent = nome.value;
-    cardSec.textContent = seguranca.value;
     cardNumber.textContent = numero.value;
+    cardSec.textContent = seguranca.value;
     cardValid.textContent = mes.value + '/' + ano.value;
 }
 
@@ -47,6 +50,8 @@ function letrasMaiusculas(){
     nome.value = nome.value.toUpperCase();
 }
 
+//  Função de mensagem
 function msg (){
-    resposta.innerHTML = "Thank you!";
+    
+    resposta.innerHTML = "Thank you! We've added your card details Continue.";
 }
